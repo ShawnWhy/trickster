@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="assets\authoritarian.png" />
+    <None Remove="assets\captain.png" />
+    <None Remove="assets\coquette.png" />
+    <None Remove="assets\innocent.png" />
+    <None Remove="assets\precious.png" />
+    <None Remove="assets\trickster.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\authoritarian.png" />
+    <Resource Include="assets\captain.png" />
+    <Resource Include="assets\coquette.png" />
+    <Resource Include="assets\innocent.png" />
+    <Resource Include="assets\precious.png" />
+    <Resource Include="assets\trickster.png" />
+  </ItemGroup>
+
+</Project>

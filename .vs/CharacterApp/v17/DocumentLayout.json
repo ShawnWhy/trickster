@@ -1,0 +1,227 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\csharp\\wpfApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5B854324-4431-4382-AD89-69A155B5B5C0}|WpfApp1\\WpfApp1.csproj|d:\\csharp\\wpfapp1\\wpfapp1\\wpfapp1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5B854324-4431-4382-AD89-69A155B5B5C0}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\wpfapp1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B854324-4431-4382-AD89-69A155B5B5C0}|WpfApp1\\WpfApp1.csproj|d:\\csharp\\wpfapp1\\wpfapp1\\coquette.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B854324-4431-4382-AD89-69A155B5B5C0}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\coquette.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B854324-4431-4382-AD89-69A155B5B5C0}|WpfApp1\\WpfApp1.csproj|d:\\csharp\\wpfapp1\\wpfapp1\\innocent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B854324-4431-4382-AD89-69A155B5B5C0}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\innocent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B854324-4431-4382-AD89-69A155B5B5C0}|WpfApp1\\WpfApp1.csproj|d:\\csharp\\wpfapp1\\wpfapp1\\authoritarian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B854324-4431-4382-AD89-69A155B5B5C0}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\authoritarian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B854324-4431-4382-AD89-69A155B5B5C0}|WpfApp1\\WpfApp1.csproj|d:\\csharp\\wpfapp1\\wpfapp1\\captain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B854324-4431-4382-AD89-69A155B5B5C0}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\captain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B854324-4431-4382-AD89-69A155B5B5C0}|WpfApp1\\WpfApp1.csproj|d:\\csharp\\wpfapp1\\wpfapp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B854324-4431-4382-AD89-69A155B5B5C0}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B854324-4431-4382-AD89-69A155B5B5C0}|WpfApp1\\WpfApp1.csproj|d:\\csharp\\wpfapp1\\wpfapp1\\trickster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B854324-4431-4382-AD89-69A155B5B5C0}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\trickster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B854324-4431-4382-AD89-69A155B5B5C0}|WpfApp1\\WpfApp1.csproj|d:\\csharp\\wpfapp1\\wpfapp1\\precious.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B854324-4431-4382-AD89-69A155B5B5C0}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\precious.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B854324-4431-4382-AD89-69A155B5B5C0}|WpfApp1\\WpfApp1.csproj|d:\\csharp\\wpfapp1\\wpfapp1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5B854324-4431-4382-AD89-69A155B5B5C0}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B854324-4431-4382-AD89-69A155B5B5C0}|WpfApp1\\WpfApp1.csproj|d:\\csharp\\wpfapp1\\wpfapp1\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B854324-4431-4382-AD89-69A155B5B5C0}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B854324-4431-4382-AD89-69A155B5B5C0}|WpfApp1\\WpfApp1.csproj|d:\\csharp\\wpfapp1\\wpfapp1\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B854324-4431-4382-AD89-69A155B5B5C0}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B854324-4431-4382-AD89-69A155B5B5C0}|WpfApp1\\WpfApp1.csproj|d:\\csharp\\wpfapp1\\wpfapp1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5B854324-4431-4382-AD89-69A155B5B5C0}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\csharp\\wpfApp1\\WpfApp1\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp1\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\csharp\\wpfApp1\\WpfApp1\\MainWindow.xaml.cs",
+              "RelativeToolTip": "WpfApp1\\MainWindow.xaml.cs",
+              "ViewState": "AQIAACkBAAAAAAAAAAAYwDYBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T01:40:18.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Authoritarian.cs",
+              "DocumentMoniker": "D:\\csharp\\wpfApp1\\WpfApp1\\Authoritarian.cs",
+              "RelativeDocumentMoniker": "WpfApp1\\Authoritarian.cs",
+              "ToolTip": "D:\\csharp\\wpfApp1\\WpfApp1\\Authoritarian.cs",
+              "RelativeToolTip": "WpfApp1\\Authoritarian.cs",
+              "ViewState": "AQIAAPAAAAAAAAAAAADwv2sBAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T17:20:35.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Innocent.cs",
+              "DocumentMoniker": "D:\\csharp\\wpfApp1\\WpfApp1\\Innocent.cs",
+              "RelativeDocumentMoniker": "WpfApp1\\Innocent.cs",
+              "ToolTip": "D:\\csharp\\wpfApp1\\WpfApp1\\Innocent.cs",
+              "RelativeToolTip": "WpfApp1\\Innocent.cs",
+              "ViewState": "AQIAACABAAAAAAAAAAAowNAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T20:05:01.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Coquette.cs",
+              "DocumentMoniker": "D:\\csharp\\wpfApp1\\WpfApp1\\Coquette.cs",
+              "RelativeDocumentMoniker": "WpfApp1\\Coquette.cs",
+              "ToolTip": "D:\\csharp\\wpfApp1\\WpfApp1\\Coquette.cs",
+              "RelativeToolTip": "WpfApp1\\Coquette.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAgwB8AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T20:01:45.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Trickster.cs",
+              "DocumentMoniker": "D:\\csharp\\wpfApp1\\WpfApp1\\Trickster.cs",
+              "RelativeDocumentMoniker": "WpfApp1\\Trickster.cs",
+              "ToolTip": "D:\\csharp\\wpfApp1\\WpfApp1\\Trickster.cs",
+              "RelativeToolTip": "WpfApp1\\Trickster.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAgwDgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T20:28:48.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Captain.cs",
+              "DocumentMoniker": "D:\\csharp\\wpfApp1\\WpfApp1\\Captain.cs",
+              "RelativeDocumentMoniker": "WpfApp1\\Captain.cs",
+              "ToolTip": "D:\\csharp\\wpfApp1\\WpfApp1\\Captain.cs",
+              "RelativeToolTip": "WpfApp1\\Captain.cs",
+              "ViewState": "AQIAALQAAAAAAAAAAAAwwJkAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T17:17:18.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WpfApp1.csproj",
+              "DocumentMoniker": "D:\\csharp\\wpfApp1\\WpfApp1\\WpfApp1.csproj",
+              "RelativeDocumentMoniker": "WpfApp1\\WpfApp1.csproj",
+              "ToolTip": "D:\\csharp\\wpfApp1\\WpfApp1\\WpfApp1.csproj",
+              "RelativeToolTip": "WpfApp1\\WpfApp1.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-24T21:45:22.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Precious.cs",
+              "DocumentMoniker": "D:\\csharp\\wpfApp1\\WpfApp1\\Precious.cs",
+              "RelativeDocumentMoniker": "WpfApp1\\Precious.cs",
+              "ToolTip": "D:\\csharp\\wpfApp1\\WpfApp1\\Precious.cs",
+              "RelativeToolTip": "WpfApp1\\Precious.cs",
+              "ViewState": "AQIAANIAAAAAAAAAAADwv+cAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T20:06:04.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\csharp\\wpfApp1\\WpfApp1\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WpfApp1\\MainWindow.xaml",
+              "ToolTip": "D:\\csharp\\wpfApp1\\WpfApp1\\MainWindow.xaml",
+              "RelativeToolTip": "WpfApp1\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-04T17:07:07.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\csharp\\wpfApp1\\WpfApp1\\App.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp1\\App.xaml.cs",
+              "ToolTip": "D:\\csharp\\wpfApp1\\WpfApp1\\App.xaml.cs",
+              "RelativeToolTip": "WpfApp1\\App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T18:05:12.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\csharp\\wpfApp1\\WpfApp1\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "WpfApp1\\AssemblyInfo.cs",
+              "ToolTip": "D:\\csharp\\wpfApp1\\WpfApp1\\AssemblyInfo.cs",
+              "RelativeToolTip": "WpfApp1\\AssemblyInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T19:52:27.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\csharp\\wpfApp1\\WpfApp1\\App.xaml",
+              "RelativeDocumentMoniker": "WpfApp1\\App.xaml",
+              "ToolTip": "D:\\csharp\\wpfApp1\\WpfApp1\\App.xaml",
+              "RelativeToolTip": "WpfApp1\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-09T01:43:22.736Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
