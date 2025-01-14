@@ -104,6 +104,7 @@ namespace WpfApp1
                     Narrator.Text += $"\n{Name} is wounded but alive, he take {captain.HitPoints} damage";
                     HitPoints -= captain.HitPoints;
                     CharacterDeath(captain, PlayerCharacter);
+                    moveCharacter(this, Canvas);
                 }
                 else if (HitPoints < captain.HitPoints)
                 {
@@ -112,6 +113,7 @@ namespace WpfApp1
                     Narrator.Text += $"\n{captain.Name} is wounded but alive, he take {HitPoints} damage";
                     captain.HitPoints -= HitPoints;
                     CharacterDeath(this, PlayerCharacter);
+                    moveCharacter(captain, Canvas);
                 }
                 else
                 {
@@ -119,14 +121,21 @@ namespace WpfApp1
                     CharacterDeath(this, PlayerCharacter);
                     CharacterDeath(captain, PlayerCharacter);
                 }
+                awaitMove();
             }
         }
 
         public void respondCoquette(Coquette coquette)
         {
-            double healhtLost = coquette.HitPoints * 0.5;
+            if (HitPoints <= 0)
+            {
+                Narrator.Text += $"\n{Name} the captain is dead";
+            }
+            else
+            {
+                Narrator.Text += $"{Name} responds to {coquette.Name} the coquette";
+            }
             //round to integer
-            coquette.HitPoints -= (int)healhtLost;
             Narrator.Text += $"{Name} responds to {coquette.Name} the coquette";
         }
 

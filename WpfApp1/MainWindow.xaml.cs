@@ -11,11 +11,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Media.Animation;
 using WpfApp1;
+using System.Threading.Tasks;
+//using static System.Net.Mime.MediaTypeNames;
+
 
 namespace WpfApp1
 {
 
+
+        
             public enum CharacterType
         {
             Trickster,
@@ -78,11 +84,180 @@ namespace WpfApp1
             Canvas = canvas;
             ItemsListBox = listBox;
             CharacterIndex = characterIndex;
+            updateCanvasandCharacterList();
             if (playerCharacter != null)
             {
                 PlayerCharacter = playerCharacter;
             }
             else playerCharacter = (PlayerCharacter)this;
+        }
+
+
+        public void moveAnimation(Character character, Canvas canvas, double Xposition, double Yposition)
+        {
+            Double currentX = character.PositionX;
+            Double currentY = character.PositionY;
+            DoubleAnimation animation = new DoubleAnimation();
+            animation.From = currentX;
+            animation.To = Xposition;  // this value should be within the canvas size
+            animation.Duration = new Duration(TimeSpan.FromSeconds(.5));
+            animation.AutoReverse = false;
+            //play only once
+            animation.RepeatBehavior = new RepeatBehavior(1);
+
+            DoubleAnimation animation2 = new DoubleAnimation();
+            animation2.From = currentY;
+            animation2.To = Yposition;  // this value should be within the canvas size
+            animation2.Duration = new Duration(TimeSpan.FromSeconds(.5));
+            animation2.AutoReverse = false;
+            //play only once
+            animation2.RepeatBehavior = new RepeatBehavior(1);
+
+            //find image in the canvas by character index
+            Image dynamicImage = (Image)canvas.FindName("image" + character.CharacterIndex);
+
+            TranslateTransform translateTransform1 = dynamicImage.RenderTransform as TranslateTransform;
+            translateTransform1.BeginAnimation(TranslateTransform.XProperty, animation);
+            TranslateTransform translateTransform2 = dynamicImage.RenderTransform as TranslateTransform;
+            translateTransform2.BeginAnimation(TranslateTransform.YProperty, animation2);
+
+       
+        }
+   
+
+        public void moveCharacter(Character character,Canvas canvas)
+
+
+        {
+            Image dynamicImage = null;
+            Narrator.Text += "\nMoving character";
+            Random random = new Random();
+            double random1 = random.Next(-50, 50);
+            double random2 = random.Next(-50, 50);
+            //move character based on their original position add or subtract a random number between 50 and 150
+            double newXposition = character.PositionX + random1;
+            double newYposition = character.PositionY + random2;
+
+            double currentX = character.PositionX;
+            double currentY = character.PositionY;
+            DoubleAnimation animation = new DoubleAnimation();
+            animation.From = currentX;
+            animation.To = newXposition;  // this value should be within the canvas size
+            animation.Duration = new Duration(TimeSpan.FromSeconds(.5));
+            animation.AutoReverse = false;
+            //play only once
+            animation.RepeatBehavior = new RepeatBehavior(1);
+
+            DoubleAnimation animation2 = new DoubleAnimation();
+            animation2.From = currentY;
+            animation2.To = newYposition;  // this value should be within the canvas size
+            animation2.Duration = new Duration(TimeSpan.FromSeconds(.5));
+            animation2.AutoReverse = false;
+            //play only once
+            animation2.RepeatBehavior = new RepeatBehavior(1);
+            //list all of the names of all of the images in the Canvas
+            foreach (var child in canvas.Children)
+            {
+                //get the name of the image
+                if (child is Image)
+                {
+                    string name = (child as Image).Name;
+                    if (name == "image" + character.CharacterIndex)
+                    {
+                        Narrator.Text += "\nImage found";
+                        dynamicImage = (Image)child;
+
+
+                    }
+                    else
+                    {
+                        
+                    }
+                    if(dynamicImage != null)
+                    {
+
+                        //if (dynamicImage.RenderTransform == null || !(dynamicImage.RenderTransform is TranslateTransform))
+                        //{
+                        //dynamicImage.RenderTransform = new TranslateTransform();
+                        //}
+
+                        //TranslateTransform translateTransform = dynamicImage.RenderTransform as TranslateTransform;
+
+                        //translateTransform.BeginAnimation(TranslateTransform.XProperty, animation);
+                        //translateTransform.BeginAnimation(TranslateTransform.YProperty, animation2);
+                        //animate transform the margin of the image
+
+
+                        //ThicknessAnimation marginAnimation = new ThicknessAnimation
+                        //{
+                        // From = new Thickness(0, 0, 0, 0),
+                        //To = new Thickness(50, 50, 50, 50),
+                        //Duration = TimeSpan.FromSeconds(1)
+                        //};
+                        double absolute1 = Math.Abs(random1);
+                        double absolute2 = Math.Abs(random2);
+                        double averageAbsolute = (absolute1 + absolute2) / 2;
+                        ThicknessAnimation marginAnimation = new ThicknessAnimation
+                        {
+                            From = new Thickness(character.PositionX, character.PositionY, 0, 0),
+                            To = new Thickness(newXposition, newYposition, 0, 0),
+                            //absolute value of random1
+                            
+                            Duration = TimeSpan.FromSeconds(averageAbsolute*.01)
+                        };
+
+                        // Apply the animation to the Margin property of the image
+                        dynamicImage.BeginAnimation(FrameworkElement.MarginProperty, marginAnimation);
+                        character.PositionX = (int)newXposition;
+                        character.PositionY = (int)newYposition;
+                        Narrator.Text += $"\n{newXposition}";
+                        Narrator.Text += $"\n{newYposition}";
+
+                        Narrator.Text += $"\n{character.PositionX}";
+                        Narrator.Text += $"\n{character.PositionY}";
+                    }
+                    else
+                    {
+                        Narrator.Text += $"{character.Name} is not found in the iamges";
+                    }
+
+                }
+            }
+            //update the canvas
+        }
+
+        public void shakeCharacter(Character character, Canvas canvas)
+        {
+            //animation to shake a image element in the canvas
+            //get the image element by name
+
+            Image image = (Image)canvas.FindName("image" + character.CharacterIndex);
+            //create a new animation
+            DoubleAnimation animation = new DoubleAnimation();
+            //set the duration of the animation
+            animation.Duration = new Duration(TimeSpan.FromSeconds(1));
+            //set the repeat behavior of the animation
+            
+            //repeat twice
+            animation.AutoReverse = true;
+            animation.RepeatBehavior =new RepeatBehavior(2);
+
+            //set the from value of the animation
+            animation.From = 0;
+            //set the to value of the animation
+            animation.To = 360;
+            //set the axis of the rotation
+            RotateTransform rotateTransform = new RotateTransform();
+            //set the center of the rotation
+                
+            rotateTransform.CenterX = 0.5;
+            rotateTransform.CenterY = 0.5;
+            //set the transform of the image
+            image.RenderTransform = rotateTransform;
+            //set the property to animate
+            image.SetCurrentValue(Image.RenderTransformProperty, new RotateTransform());
+            image.BeginAnimation(Image.RenderTransformProperty, animation);
+
         }
 
         public void CharacterDeath(Character character, PlayerCharacter playercharacter)
@@ -91,10 +266,8 @@ namespace WpfApp1
             playercharacter.Money += character.Money;
             //remove the character from the list
             Characters.Remove(character);
-            updateCanvasandCharacterList();
-            
+            awaitMove();
 
-            
         }
 
         public void updateCanvasandCharacterList()
@@ -115,11 +288,13 @@ namespace WpfApp1
                 image.Margin = new Thickness(character.PositionX, character.PositionY, 0, 0);
 
                image.Margin = new Thickness(character.PositionX, character.PositionY, 0, 0);
+               image.Name = "image" + character.CharacterIndex;
                 //capture clicks in the eclips
 
                 image.MouseUp += (sender, e) =>
                 {
                     PlayerCharacter.Provoke(character);
+                  
                 };
                 Canvas.Children.Add(image);
 
@@ -135,9 +310,14 @@ namespace WpfApp1
             }
 
         }
+        public async Task awaitMove()
+        {
+            Console.WriteLine("Waiting for 0.7 seconds...");
+            await Task.Delay(700); // Delay for 0.7 seconds (700 milliseconds)
+            updateCanvasandCharacterList();
+        }
 
-    
- 
+
 
         public string toString()
         {
@@ -306,8 +486,14 @@ namespace WpfApp1
                     image.Height = 50; //height of image auto
                     image.Width = 50;
                     //width of image auto
+                    image.Name = "image" + character.CharacterIndex;
                     image.Source = new BitmapImage(new Uri("pack://application:,,,/assets/" + character.GetType().Name + ".png"));
-                    image.Margin = new Thickness(character.PositionX, character.PositionY, 0, 0); 
+                    image.Margin = new Thickness(character.PositionX, character.PositionY, 0, 0);
+                    //set the image property to be animated using this translateTransform.BeginAnimation(TranslateTransform.YProperty, animation2);
+
+                    //set image position
+                    //image.TranslatePoint(new Point(character.PositionX, character.PositionY), canvas);
+
 
 
                     /*                    Ellipse ellipse = new Ellipse();
@@ -345,18 +531,23 @@ namespace WpfApp1
                     image.MouseUp += (sender, e) =>
                     {
                         playerCharacter.Provoke(character);
+
                     };
                     canvas.Children.Add(image);
 
                     TextBlock textBlock = new TextBlock();
                     textBlock.Text = character.Name + " the " + character.GetType().Name;
+                    textBlock.Text += character.PositionX; textBlock.Text += character.PositionY;
                     textBlock.Margin = new Thickness(character.PositionX, character.PositionY, 0, 0);
+                    textBlock.Margin = new Thickness(character.PositionX, character.PositionY, 0, 0);
+
 
                     textBlock.Name = "textBlock" + characterIndex;
                     canvas.Children.Add(textBlock);
                 }
             }
         }
+
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
@@ -440,6 +631,7 @@ namespace WpfApp1
 
                         TextBlock textBlock = new TextBlock();
                         textBlock.Text = character.Name + " the " + character.GetType().Name;
+                        textBlock.Text += character.PositionX; textBlock.Text += character.PositionY;
                         textBlock.Margin = new Thickness(character.PositionX, character.PositionY, 0, 0);
 
                         textBlock.Name = "textBlock" + characterIndex;

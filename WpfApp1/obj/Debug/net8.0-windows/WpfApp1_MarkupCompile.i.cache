@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\csharp\wpfApp1\WpfApp1\obj\Debug\net8.0-windows\
+D:\csharp\trickster\WpfApp1\obj\Debug\net8.0-windows\
 WpfApp1
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\csharp\wpfApp1\WpfApp1\App.xaml
+D:\csharp\trickster\WpfApp1\App.xaml
 11407045341
 
 12-170836443
 1981385397204
 MainWindow.xaml;
 
-False
+True
 

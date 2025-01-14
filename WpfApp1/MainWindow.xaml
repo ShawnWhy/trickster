@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" SizeToContent="WidthAndHeight">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="19*"/>
             <ColumnDefinition Width="13*"/>
         </Grid.ColumnDefinitions>
         <Button x:Name="createCharacter"  Click="CreateCharacter_Click" Content="Create Character" HorizontalAlignment="Left" Height="45" Margin="14,364,0,0" VerticalAlignment="Top" Width="130"/>
-        <ComboBox x:Name="selectType" Width="120" Margin="10,46,345,369" Text="-- Select Team --"/>
-        <TextBox x:Name="newName" HorizontalAlignment="Left" Margin="10,89,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Height="18"/>
+        <ComboBox x:Name="selectType" Margin="10,46,345,369" Text="-- Select Team --" Width="120" Height="15"/>
+        <TextBox x:Name="newName" HorizontalAlignment="Left" Margin="10,0,0,327" TextWrapping="Wrap" Text="TextBox" Width="120" Height="15" VerticalAlignment="Bottom"/>
 
         <ListBox x:Name="ItemsListBox" Margin="103,-80,110,0"  RenderTransformOrigin="0.5,0.5" Height="281" VerticalAlignment="Top" Grid.Column="1" Width="112" >
             <ListBox.RenderTransform>

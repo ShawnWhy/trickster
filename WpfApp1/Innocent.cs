@@ -140,7 +140,7 @@ namespace WpfApp1
                 }
 
             }
-            updateCanvasandCharacterList();
+            awaitMove();
         }
 
         public void respondCoquette(Coquette coquette)
@@ -165,7 +165,7 @@ namespace WpfApp1
                     Narrator.Text += $"\n{Name} they both walk away with their lives";
                 }
             }
-            updateCanvasandCharacterList();
+            awaitMove();
         }
 
         public void respondInnocent(Innocent innocent)
@@ -181,7 +181,7 @@ namespace WpfApp1
                 Narrator.Text += $"\n{Name} and {innocent.Name} played happily together";
                 Money += 10;
             }
-            updateCanvasandCharacterList();
+            awaitMove();
         }
 
         public void respondPrecious(Precious precious)
@@ -204,9 +204,13 @@ namespace WpfApp1
                 else
                 {
                     Narrator.Text += $"\n{Name} they both walk away with their lives";
+                    moveCharacter(precious, Canvas);
                 }
+                
             }
-            
+            awaitMove();
+
+
         }
 
 
@@ -249,6 +253,7 @@ namespace WpfApp1
             else {
                 authoritarian.respondInnocent(this);
             }
+           
         }
 
         public void provokeCaptain(Captain captain)
@@ -283,6 +288,7 @@ namespace WpfApp1
                 CharacterDeath(captain, PlayerCharacter);
             }
            
+            
 
         }
 

@@ -97,7 +97,8 @@ namespace WpfApp1
                 Narrator.Text += $"{Name} the Precious is dead.";
                 CharacterDeath(this, PlayerCharacter);
             }
-            updateCanvasandCharacterList();
+            moveCharacter(this, Canvas);
+            awaitMove();
         }
 
         public void respondAuthoritarian(Authoritarian authoritarian)
@@ -130,7 +131,9 @@ namespace WpfApp1
                 Narrator.Text += $"{Name} the Precious is dead.";
                 CharacterDeath(this, PlayerCharacter);
             }
-            updateCanvasandCharacterList();
+            moveCharacter(this, Canvas);
+
+            awaitMove();
         }
 
     
@@ -171,7 +174,7 @@ namespace WpfApp1
                 CharacterDeath(captain, PlayerCharacter);
                 Narrator.Text +=$"{captain.Name} the captain cannot believe the gravity of his deeds. He kills him self in front of the crowd in a narcissistic dramatic display";
             }
-            updateCanvasandCharacterList();
+            awaitMove();
 
         }
 
@@ -230,7 +233,7 @@ namespace WpfApp1
                 Narrator.Text += $"{Name} the Precious is dead.";
                 CharacterDeath(this, PlayerCharacter);
             }
-            updateCanvasandCharacterList();
+            awaitMove();
         }
 
         public void respondInnocent(Innocent innocent)
@@ -254,7 +257,7 @@ namespace WpfApp1
                 Narrator.Text += $"{Name} the Precious is dead.";
                 CharacterDeath(this, PlayerCharacter);
             }
-            updateCanvasandCharacterList();
+            awaitMove();
         }
 
         public void respondPrecious(Precious precious)
@@ -275,7 +278,7 @@ namespace WpfApp1
                 Narrator.Text += $"{Name} the Precious is dead.";
                 CharacterDeath(this, PlayerCharacter);
             }
-            updateCanvasandCharacterList();
+            awaitMove();
 
         }
 

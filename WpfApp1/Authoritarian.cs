@@ -113,7 +113,7 @@ namespace WpfApp1
                     Narrator.Text += $"{trickster.Name} the trickster has {trickster.HitPoints} health left";
                 }
             }
-            updateCanvasandCharacterList();
+            awaitMove();
         }
 
         public void respondAuthoritarian(Authoritarian authoritarian)
@@ -139,7 +139,7 @@ namespace WpfApp1
                     Narrator.Text += $"{authoritarian.Name} the authoritarian has {authoritarian.HitPoints} health left";
                 }
             }
-            updateCanvasandCharacterList();
+            awaitMove();
         }
 
         public void respondCaptain(Captain captain)
@@ -195,7 +195,7 @@ namespace WpfApp1
                 }
             }
             
-            updateCanvasandCharacterList();
+            awaitMove();
         }
 
         public void respondCoquette(Coquette coquette)
@@ -239,7 +239,7 @@ namespace WpfApp1
 
             }
 
-            updateCanvasandCharacterList();
+            awaitMove();
         }
 
         public void respondInnocent(Innocent innocent)
@@ -264,7 +264,7 @@ namespace WpfApp1
 
             }
                             Narrator.Text += $"\n {Name} the authoritarian cannot believe his eyes as he is mortally wounded by such a insignificiant creature. He dies";
-                updateCanvasandCharacterList();
+                awaitMove();
         }
 
         public void respondPrecious(Precious precious)
@@ -292,7 +292,7 @@ namespace WpfApp1
                     Narrator.Text += $"\n{precious.Name} is not amused by the pautry gift and takes it as an insult. {Name} the authoritarian takes out his dagger and kills him self infront of her out of deep shame";
                 }
             }
-            updateCanvasandCharacterList();
+            awaitMove();
         }
         public void provokeTrickster(Trickster trickster)
         {
@@ -323,7 +323,7 @@ namespace WpfApp1
             {   
                 CharacterDeath(captain, PlayerCharacter);
                 Narrator.Text += $"\n{captain.Name} the captain has no money to pay the fine, and is jailed by the {Name} the authoritarian, his cries can be heared at night proclaiming his innocence";
-                updateCanvasandCharacterList();
+                awaitMove();
 
             }
             else
@@ -344,7 +344,7 @@ namespace WpfApp1
                 coquette.Money -= 40;
                 Narrator.Text += $"\n{coquette.Name} has enough money to pay the fine and thinks nothing of it";
                 Money += 40;
-                updateCanvasandCharacterList();
+                awaitMove();
             }
             else
             {
@@ -372,7 +372,7 @@ namespace WpfApp1
                 Money -= 50;
                 precious.Money += 50;
                 Narrator.Text += $"\n{precious.Name} the precious is delighted by the gift and gives {Name} the authoritarian a hug, healing him for 10 points";
-                updateCanvasandCharacterList();
+                awaitMove();
             }
             else
             {
